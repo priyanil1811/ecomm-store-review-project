@@ -1,1 +1,21 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
+:root {
+    --main-clr: #820000;
+    --main-clr-lt: #b30000;
+    --main-clr-dk: #510000;
+
+    --secondary-clr: #909090;
+    --secondary-clr-lt: #B4B4B4;
+    --secondary-clr-dk: #636363;
+
+    --ntrl-clr-lt: #ffffff;
+    --ntrl-clr-dk: #000000;
+
+    --main-fs: 16px;
+    --h1-fs: 28px;
+    --h2-fs: 22px;
+    --h3-fs: 18px;
+
+    --pad-and-gap: 1em;
+
+  }
