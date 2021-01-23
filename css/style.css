@@ -17,5 +17,43 @@
     --h3-fs: 18px;
 
     --pad-and-gap: 1em;
-
   }
+
+  body {
+      background-color: var(--ntrl-clr-lt);
+      color: var(--ntrl-clr-dk);
+      font-size: var(--main-fs);
+      line-height: 1.5em;
+  }
+
+  .products, .page-header, .page-footer {
+      padding-left: var(--pad-and-gap);
+      padding-right: var(--pad-and-gap);
+  }
+
+  .your-products {
+      display: flex;
+  }
+
+  .pagination {
+      text-align: center;
+  }
+
+  .pages {
+      display: flex;
+      justify-content: center;
+  }
+
+  .pages > li, .social > li, .legal > li {
+      margin: calc(var(--pad-and-gap) / 2);
+  }
+
+  .social, .legal {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .copyright {
+      text-align: right;
+  }
+
