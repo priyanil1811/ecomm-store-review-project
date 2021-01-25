@@ -65,16 +65,27 @@ body {
 .logo {
     grid-row: 1;
     grid-column: 1;
+    text-decoration: none;
+    color: var(--ntrl-clr-lt);
+    font-family: fantasy;
+    font-weight: bolder;
+    padding: 5px 5px 0px 5px;
+    margin-top: 0.2em;
 }
 
 .nav-toggle {
     grid-row: 1;
     grid-column: 4;
+    border: none;
+    background: none;
+    font-size: var(--h2-fs);
+    padding-top: 0.2em;
 }
 
 .search {
     grid-row: 2;
     grid-column: 1 / 5;
+    margin-top: 0.5em;
 }
 
 .navigation {
@@ -90,3 +101,81 @@ body {
 .filter-list {
     display: flex;
 }
+
+.your-products .fa-heart {
+    font-size: var(--h2-fs);
+    color: var(--secondary-clr-lt);
+}
+
+.your-products .fa-shopping-bag {
+    font-size: var(--h2-fs);
+    color: var(--secondary-clr-lt);
+}
+
+.your-products > li {
+    padding-left: calc(var(--pad-and-gap) / 4);
+    padding-right: calc(var(--pad-and-gap) / 4);
+    padding-top: 0.2em;
+}
+
+.fa-bars, .fa-times {
+    padding-left: calc(var(--pad-and-gap) / 4);
+    color: var(--ntrl-clr-lt);
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+#check, .submenu, .fa-times{
+    display: none;
+}
+
+.navigation ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--secondary-clr-lt);
+    top: 35px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+#check:checked ~ .navigation ul {
+    left: 0;
+}
+
+#check:checked ~ .nav-toggle .fa-bars {
+    display: none;
+}
+
+#check:checked ~ .nav-toggle .fa-times {
+    display: block;
+}
+
+nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a {
+    font-size: var(--h2-fs);
+    color: var(--ntrl-clr-lt);
+}
+
+nav ul li a:hover , nav ul li a.active {
+    background: none;
+    color: var(--main-clr);
+}
+
+.page-header {
+    background-color: var(--main-clr);
+    padding-bottom: 0.5em;
+}
+
+#find {
+    width: 90%;
+}
+
