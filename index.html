@@ -61,39 +61,113 @@
           <fieldset>
             <legend>Colour</legend>
             <ul class="filter-list">
-              <li><input type="checkbox" name="colour" value="maroon" id="maroon"> <label for="maroon">Maroon</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="green" id="green"> <label for="green">Green</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-              <li><input type="checkbox" name="colour" value="purple" id="purple"> <label for="purple">Purple</label></li>
-              <li><input type="checkbox" name="colour" value="multi" id="multi"> <label for="multi">Multicolor</label></li>
+              <li>
+                <label class="container" for="maroon">Maroon
+                  <input type="checkbox" name="colour" value="maroon" id="maroon">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="green">Green
+                  <input type="checkbox" name="colour" value="green" id="green">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="red">Red
+                  <input type="checkbox" name="colour" value="red" id="red">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="orange">Orange
+                  <input type="checkbox" name="colour" value="orange" id="orange">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="purple">Purple
+                  <input type="checkbox" name="colour" value="purple" id="purple">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Sizes</legend>
             <ul class="filter-list">
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
+              <li>
+                <label class="container" for="xs">XS
+                  <input type="checkbox" name="colour" value="xs" id="xs">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="sm">S
+                  <input type="checkbox" name="colour" value="sm" id="sm">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="md">M
+                  <input type="checkbox" name="colour" value="md" id="md">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="lg">L
+                  <input type="checkbox" name="colour" value="lg" id="lg">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="xl">XL
+                  <input type="checkbox" name="colour" value="xl" id="xl">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Fabric</legend>
             <ul class="filter-list">
-              <li><input type="checkbox" name="fabric" value="slik" id="slik"> <label for="slik">Slik</label></li>
-              <li><input type="checkbox" name="fabric" value="net" id="net"> <label for="net">Net</label></li>
-              <li><input type="checkbox" name="fabric" value="cotton" id="cotton"> <label for="cotton">Cotton</label></li>
-              <li><input type="checkbox" name="fabric" value="polyster" id="polyster"> <label for="polyster">Polyster</label></li>
-              <li><input type="checkbox" name="fabric" value="velvet" id="velvet"> <label for="velvet">Velvet</label></li>
+              <li>
+                <label class="container" for="slik">Slik
+                  <input type="checkbox" name="colour" value="slik" id="slik">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="net">Net
+                  <input type="checkbox" name="colour" value="net" id="net">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="cotton">Cotton
+                  <input type="checkbox" name="colour" value="cotton" id="cotton">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="polyster">Polyster
+                  <input type="checkbox" name="colour" value="polyster" id="polyster">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container" for="velvet">Velvet
+                  <input type="checkbox" name="colour" value="velvet" id="velvet">
+                  <span class="checkmark"></span>
+                </label>
+              </li> 
             </ul>
           </fieldset>
-          
         </div>
+        <hr>
         <fieldset>
-          <label for="sort">Show</label>
+          <label for="sort">Sort by</label>
           <select name="sort" id="sort">
             <option value="price-high">Price, highest to lowest</option>
             <option value="price-low">Price, lowest to highest</option>
@@ -124,7 +198,7 @@
               <ul>
                 <li><label><input type="radio" name="colour" value="r"> Red</label></li>
                 <li><label><input type="radio" name="colour" value="m"> Maroon</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="o"> Orange</label></li>
               </ul>
             </fieldset>
             <fieldset>
@@ -162,7 +236,7 @@
               <ul>
                 <li><label><input type="radio" name="colour" value="r"> Red</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="o"> Orange</label></li>
               </ul>
             </fieldset>
             <fieldset>
@@ -198,7 +272,8 @@
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="mc"> multicolor</label></li>
+                <li><label><input type="radio" name="colour" value="o"> Orange</label></li>
+                <li><label><input type="radio" name="colour" value="g"> Green</label></li>
               </ul>
             </fieldset>
             <fieldset>
@@ -236,7 +311,7 @@
               <ul>
                 <li><label><input type="radio" name="colour" value="p"> Purple</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="o"> Orange</label></li>
               </ul>
             </fieldset>
             <fieldset>
@@ -274,7 +349,7 @@
               <ul>
                 <li><label><input type="radio" name="colour" value="r"> Red</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="o"> Orange</label></li>
               </ul>
             </fieldset>
             <fieldset>
@@ -312,7 +387,7 @@
               <ul>
                 <li><label><input type="radio" name="colour" value="r"> Red</label></li>
                 <li><label><input type="radio" name="colour" value="g"> Green</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="o"> Orange</label></li>
               </ul>
             </fieldset>
             <fieldset>

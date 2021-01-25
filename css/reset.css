@@ -36,11 +36,13 @@ fieldset {
 	margin: 0;
 	padding: 0;
 	border: none;
+	margin-top: calc(var(--pad-and-gap) / 2);
 } 
 
 legend {
 	padding: 0;
 	border: none;
+	font-size: var(--h3-fs);
 } 
 
 

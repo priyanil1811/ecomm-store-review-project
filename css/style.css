@@ -7,6 +7,7 @@
     --secondary-clr: #909090;
     --secondary-clr-lt: #B4B4B4;
     --secondary-clr-dk: #636363;
+    --secondary-clr-ltr: #cccccc;
 
     --ntrl-clr-lt: #ffffff;
     --ntrl-clr-dk: #000000;
@@ -24,6 +25,18 @@ body {
     color: var(--ntrl-clr-dk);
     font-size: var(--main-fs);
     line-height: 1.5em;
+}
+
+h1{
+    font-size: var(--h1-fs);
+}
+
+h2 {
+    font-size: var(--h2-fs);
+}
+
+h3 {
+    font-size: var(--h3-fs);
 }
 
 .products, .page-header, .page-footer {
@@ -179,3 +192,58 @@ nav ul li a:hover , nav ul li a.active {
     width: 90%;
 }
 
+.container {
+    display: block;
+    position: relative;
+    padding-left: 22px;
+    padding-right: 7px;
+    cursor: pointer;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 2;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: var(--secondary-clr-ltr);
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: var(--secondary-clr);
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: var(--main-clr);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    box-sizing: initial;
+    transform: rotate(45deg);
+  }
+
+  
