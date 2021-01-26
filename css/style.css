@@ -46,6 +46,11 @@ a {
     color: var(--main-clr-lt);
 }
 
+p {
+    color: var(--secondary-clr-dk);
+    font-size: var(--main-fs);
+}
+
 .products, .page-header, .page-footer {
     padding-left: var(--pad-and-gap);
     padding-right: var(--pad-and-gap);
@@ -89,7 +94,7 @@ a {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     background-color: var(--main-clr);
-    padding-bottom: 0.5em;
+    padding-bottom: calc(var(--pad-and-gap) / 2);
 }
 
 .logo {
@@ -115,7 +120,7 @@ a {
 .search {
     grid-row: 2;
     grid-column: 1 / 5;
-    margin-top: 0.5em;
+    margin-top: calc(var(--pad-and-gap) / 2);
 }
 
 .navigation {
@@ -134,7 +139,7 @@ a {
 
 .your-products .fa-heart, .your-products .fa-shopping-bag {
     font-size: var(--h2-fs);
-    color: var(--secondary-clr-lt);
+    color: var(--secondary-clr-ltr);
 }
 
 .your-products > li {
@@ -274,10 +279,6 @@ ins {
     margin-left: calc(var(--pad-and-gap) / 4);
 }
 
-p {
-    color: var(--secondary-clr-dk);
-}
-
 .radio-container {
     display: inline-block;
 }
@@ -303,6 +304,21 @@ p {
 .social i {
     font-size: var(--h2-fs);
     color: var(--secondary-clr-dk);
+}
+
+.filter-options {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+.page-footer {
+    background-color: var(--secondary-clr-ltr);
+    float: left;
+    width: 100%;
 }
 
 @media only screen and (min-width: 40em) {
@@ -350,7 +366,7 @@ p {
         grid-column: 5;
     }
 
-    .menu, .menu > li {
+    .navigation > .menu, .navigation > .menu > li {
         display: flex;
     }
 
@@ -382,6 +398,58 @@ p {
     }
 
     #find {
-        width: unset;
+        width: 225px;
     }
+      
+    .navigation ul{
+        margin-right: 20px;
+        position: unset;
+        width: unset;
+        height: unset;
+        background: unset;
+        transition: unset;
+    }
+
+    .navigation ul li{
+        margin: 0 5px;
+    }
+
+    .navigation ul li a{
+        font-size: var(--h3-fs);
+        padding: 0px 10px;
+        border-radius: 3px;
+    }
+
+    .navigation ul li a.active, .navigation ul li a:hover{
+        background: var(--secondary-clr-ltr);
+        transition: .5s;
+    }
+
+    .page-header {
+        padding-top: calc(var(--pad-and-gap) / 2);
+    }
+
+    .search {
+        margin-top: 0.2em;
+        margin-right: 25px;
+    }
+
+    .your-products > li {
+        padding-left: calc(var(--pad-and-gap) / 2);
+        padding-right: calc(var(--pad-and-gap) / 2);
+    }
+
+    .product {
+        width: 98%;
+    }
+
+    .product:nth-child(odd) {
+        margin-left: 2%;
+    }
+
+    .legal {
+        justify-content: center;
+        display: flex;
+    }
+
 }
