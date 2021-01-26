@@ -9,6 +9,8 @@
     --secondary-clr-dk: #636363;
     --secondary-clr-ltr: #cccccc;
 
+    --star-clr: #e2a42f;
+
     --ntrl-clr-lt: #ffffff;
     --ntrl-clr-dk: #000000;
 
@@ -157,6 +159,11 @@ h3 {
 
 #check:checked ~ .navigation ul {
     left: 0;
+    z-index: 1;
+}
+
+body:has(#check:checked) {
+    overflow: hidden;
 }
 
 #check:checked ~ .nav-toggle .fa-bars {
@@ -198,52 +205,94 @@ nav ul li a:hover , nav ul li a.active {
     padding-left: 22px;
     padding-right: 7px;
     cursor: pointer;
-  }
+}
   
-  .container input {
+.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
+}
 
-  .checkmark {
+.checkmark {
     position: absolute;
-    top: 2;
+    top: 2px;
     left: 0;
     height: 18px;
     width: 18px;
     background-color: var(--secondary-clr-ltr);
-  }
+}
 
-  .container:hover input ~ .checkmark {
+.container:hover input ~ .checkmark {
     background-color: var(--secondary-clr);
-  }
+}
   
-  .container input:checked ~ .checkmark {
+.container input:checked ~ .checkmark {
     background-color: var(--main-clr);
-  }
+}
   
-  .checkmark:after {
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
+}
   
-  .container input:checked ~ .checkmark:after {
+.container input:checked ~ .checkmark:after {
     display: block;
-  }
+}
   
-  .container .checkmark:after {
+.container .checkmark:after {
     left: 6px;
     top: 3px;
     width: 4px;
     height: 8px;
-    border: solid white;
+    border: solid var(--ntrl-clr-lt);
     border-width: 0 2px 2px 0;
     box-sizing: initial;
     transform: rotate(45deg);
-  }
-
+}
   
+.roundmark {
+    border-radius: 50%;
+}
+
+.container .roundmark:after {
+    border-radius: 50%;
+    background: var(--ntrl-clr-lt);
+    height: 4px;
+    top: 6px;
+}
+
+.fa-star, .fa-star-half-alt {
+    color: var(--star-clr);
+}
+
+ins {
+    color: var(--main-clr-lt);
+    margin-left: calc(var(--pad-and-gap) / 4);
+}
+
+p {
+    color: var(--secondary-clr-dk);
+}
+
+.radio-container {
+    display: inline-block;
+}
+
+.products button {
+    border: none;
+    background-color: #b30000;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 20px;
+    margin: 5px 5px 5px 0;;
+}
+
+.products button i{
+    font-size: var(--h3-fs);
+    margin-right: 5px;
+}
+
+
