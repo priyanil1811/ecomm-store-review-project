@@ -41,6 +41,11 @@ h3 {
     font-size: var(--h3-fs);
 }
 
+a {
+    text-decoration: none;
+    color: var(--main-clr-lt);
+}
+
 .products, .page-header, .page-footer {
     padding-left: var(--pad-and-gap);
     padding-right: var(--pad-and-gap);
@@ -63,9 +68,17 @@ h3 {
     margin: calc(var(--pad-and-gap) / 2);
 }
 
-.social, .legal {
+.pages > li > a:hover {
+    text-decoration: underline;
+}
+
+.social {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+.legal {
+    text-align: center;
 }
 
 .copyright {
@@ -117,12 +130,7 @@ h3 {
     display: flex;
 }
 
-.your-products .fa-heart {
-    font-size: var(--h2-fs);
-    color: var(--secondary-clr-lt);
-}
-
-.your-products .fa-shopping-bag {
+.your-products .fa-heart, .your-products .fa-shopping-bag {
     font-size: var(--h2-fs);
     color: var(--secondary-clr-lt);
 }
@@ -138,10 +146,6 @@ h3 {
     color: var(--ntrl-clr-lt);
 }
 
-.menu a {
-    text-decoration: none;
-}
-
 #check, .submenu, .fa-times{
     display: none;
 }
@@ -155,15 +159,11 @@ h3 {
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 1;
 }
 
 #check:checked ~ .navigation ul {
     left: 0;
-    z-index: 1;
-}
-
-body:has(#check:checked) {
-    overflow: hidden;
 }
 
 #check:checked ~ .nav-toggle .fa-bars {
@@ -174,18 +174,18 @@ body:has(#check:checked) {
     display: block;
 }
 
-nav ul li {
+.navigation ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
 }
 
-nav ul li a {
+.navigation ul li a {
     font-size: var(--h2-fs);
     color: var(--ntrl-clr-lt);
 }
 
-nav ul li a:hover , nav ul li a.active {
+.navigation ul li a:hover , .navigation ul li a.active {
     background: none;
     color: var(--main-clr);
 }
@@ -197,6 +197,10 @@ nav ul li a:hover , nav ul li a.active {
 
 #find {
     width: 90%;
+}
+
+#sort {
+    margin-left: calc(var(--pad-and-gap) / 2);
 }
 
 .container {
@@ -295,4 +299,11 @@ p {
     margin-right: 5px;
 }
 
+.product {
+    margin-bottom: var(--pad-and-gap);
+}
 
+.social i {
+    font-size: var(--h2-fs);
+    color: var(--secondary-clr-dk);
+}
