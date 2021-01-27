@@ -531,4 +531,12 @@ ins {
         margin: 0 auto;
     }
 
+    .results {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .subheading {
+        grid-column: 1 / 6;
+    }
+
 }
