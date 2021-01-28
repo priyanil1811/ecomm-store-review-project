@@ -106,6 +106,10 @@ p {
     grid-template-columns: auto 1fr auto auto;
     background-color: var(--main-clr);
     padding-bottom: calc(var(--pad-and-gap) / 2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -294,6 +298,10 @@ ins {
     display: inline-block;
 }
 
+.products {
+    padding-top: 4.5em;
+}
+
 .products button {
     border: none;
     background-color: var(--main-clr-lt);
@@ -419,6 +427,7 @@ ins {
 
     .products {
         display: block;
+        padding-top: 3em;
     }
 
     .filter-options {
